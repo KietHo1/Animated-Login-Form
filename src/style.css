@@ -87,7 +87,7 @@ body {
 .inputBox span {
   position: absolute;
   left: 0;
-  padding: 20px 10px 10px;
+  padding: 20px 0px 10px;
   font-size: 1em;
   color: #8f8f8f;
   pointer-events: none;
@@ -97,7 +97,7 @@ body {
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span {
   color: #45f3ff;
-  transform: translateX(-10px) translateY(-34px);
+  transform: translateX(0px) translateY(-34px);
   font-size: 0.75em;
 }
 .inputBox i {
@@ -124,4 +124,23 @@ body {
   margin: 10px 0;
   font-size: 0.75em;
   color: #8f8f8f;
+  text-decoration: none;
+}
+.links a:hover,
+.links a:nth-child(2) {
+  color: #45f3ff;
+}
+input[type="submit"] {
+  border: none;
+  outline: none;
+  background: #45f3ff;
+  padding: 11px 25px;
+  width: 100px;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+input[type="submit"]:active {
+  opacity: 0.8;
 }
